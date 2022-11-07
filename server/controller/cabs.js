@@ -1,14 +1,19 @@
 
 
 const getCab = (req, res) => {
-    const { cab_id, patch_id } = req.body;
+    // const { cab_id, patch_id } = req.body;
 
-    console.log(req.body);
+    console.log(req);
 
-    res.json({
-        cab_id,
-        patch_id
-    })
+   res.send("hello getCab");
+}
+
+const registerPlace = (req, res) => {
+
+    
+
+
+
 }
 
 

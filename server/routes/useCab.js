@@ -4,6 +4,6 @@ const { getCab } = require('../controller/cabs')
 const router = express.Router();
 
 
-router.route("/").post(getCab);
+router.route("/").get(getCab);
 
 module.exports = router;
