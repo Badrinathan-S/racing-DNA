@@ -10,13 +10,15 @@ const getCab = (req, res) => {
 
 const registerPlace = (req, res) => {
 
-    
+    const {place} = req.body;
 
+    console.log(place);
 
+    res.json({place: place});
 
 }
 
 
 
 
-module.exports = { getCab };
+module.exports = { getCab, registerPlace };

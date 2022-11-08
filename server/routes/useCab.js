@@ -1,9 +1,9 @@
 const express = require('express');
-const { getCab } = require('../controller/cabs')
+const { getCab, registerPlace } = require('../controller/cabs')
 
 const router = express.Router();
 
 
-router.route("/").get(getCab);
+router.route("/registerCab").post(registerPlace);
 
 module.exports = router;

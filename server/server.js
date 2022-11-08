@@ -10,6 +10,8 @@ const port = process.env.PORT || 5000;
 const app = express();
 connectDB();
 
+app.use(express.json()) ;
+
 app.use(cors());
 
 app.get('/', function (req, res) {
